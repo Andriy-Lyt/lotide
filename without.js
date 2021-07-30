@@ -5,6 +5,7 @@ const without = (source, itemsToRemove) => {
     for (let j = 0; j < itemsToRemove.length; j++) {
         if (source[i] === itemsToRemove[j]) {
           temp = null;
+          break;
         }  else {
           temp = source[i];
         }
