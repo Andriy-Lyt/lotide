@@ -1,20 +1,21 @@
 const without = (source, itemsToRemove) => {
   resultAr =[];
   let temp;
+  
   for (let i = 0; i < source.length; i++) {
+    temp = source[i];
+
     for (let j = 0; j < itemsToRemove.length; j++) {
-        if (source[i] === itemsToRemove[j]) {
-          temp = null;
-          break;
-        }  else {
-          temp = source[i];
-        }
+        if (temp !== itemsToRemove[j]) { continue; }  
+        else { temp = null; break; }
     } // closing inner for
+
     if (temp) {
       resultAr.push(source[i]);
       // console.log('resultAr: '+resultAr);
     }
   } // closing outer for
+
   return resultAr;
 }
 
