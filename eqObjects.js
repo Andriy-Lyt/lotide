@@ -22,7 +22,7 @@ const eqArrays = (ar1, ar2) => {
     } // closing for loop
     return check;
   } else {
-    if (ar1 !== ar2) { return check = false; }
+    return check = (ar1 !== ar2) ?  false : true;
   }
 }
 
