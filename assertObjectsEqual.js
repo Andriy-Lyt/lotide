@@ -1,4 +1,3 @@
-//Compare Objects -----------
 const eqObjects = function(object1, object2) {
   //check for equal length
   if (Object.keys(object1).length !== Object.keys(object2).length) { return false; }
@@ -8,13 +7,15 @@ const eqObjects = function(object1, object2) {
   const obj2Keys = Object.keys(object2);
   if (!eqArrays(obj1Keys, obj2Keys)) { return false; }
 
-  //check for same values
-  for (let i = 0; i < obj1Keys.length; i++) {
-    if (object1[obj1Keys[i]] !== object2[obj2Keys[i]]) { return false; }   
+//check for same values
+for(key in object1){
+  if (object1[key] !== object2[key]) {
+    return false;
   }
-
+}
   return true;
 }
+
 //Compare Arrays
 const eqArrays = (ar1, ar2) => {
   let check;

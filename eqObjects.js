@@ -37,10 +37,19 @@ const eqObjects = function(object1, object2) {
   if (!eqArrays(obj1Keys, obj2Keys)) { return false; }
 
   //check for same values
-  for (let i = 0; i < obj1Keys.length; i++) {
+/*   const obj1Values = Object.values(object1);
+  const obj2Values = Object.values(object2);
+  if(!eqArrays(obj1Values, obj2Values)){return false;}
+ */
+/*   for (let i = 0; i < obj1Keys.length; i++) {
     if (object1[obj1Keys[i]] !== object2[obj2Keys[i]]) { return false; }   
   }
-
+ */
+for(key in object1){
+  if (object1[key] !== object2[key]) {
+    return false;
+  }
+}
   return true;
 }
 
