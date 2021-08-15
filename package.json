@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@andy_web/lotide",
   "version": "1.0.0",
-  "description": "this project focuses on the fundamentals of programming and data management using JavaScript. And contains various JS helper functions. Feel free to browse through.",
+  "description": "this project contains JS helper functions for operations with Arrays and Objects.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Andriy-Lyt/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "andy_web",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Andriy-Lyt/lotide/issues"
