@@ -55,5 +55,7 @@ assertObjectsEqual(ab, ba); // false
 assertObjectsEqual(ab, bc); // false
 assertObjectsEqual(ab, ab2); //true
 
+module.exports = assertObjectsEqual;
+
 
 
