@@ -25,8 +25,25 @@ This project was created and published by me as part of my learnings at Lighthou
 ## Documentation
 
 The following functions are currently implemented:
-* `eqArrays(...)`: returns true if arrays are equal, false if not;
-* `eqObjects(...)`: returns true if objects are equal, false if not;
+* `assertArraysEqual(...)`: console logs boolean returned by eqArrays() function;
+* `assertEqual(...)`: console logs boolean if two arguments passed into a function are equal, itherwise console logs boolean false;
+* `assertObjectsEqual(...)`: takes in 2 objects and console logs true if they are equal, and false otherwise;
+* `countLetters(...)`: takes in a sentence and returns a count of each of the letters in the sentence;
+* `eqArrays(...)`: takes in 2 arrays and returns true if the arrays are equal and false otherwise;
+* `eqObjects(...)`: takes in 2 objects and return true if they are equal and false otherwise;
 * `findKey(...)`: returns key name that contains the value that matches criteria provided by callback function.
+* `findKeyByValue(...)`: takes in an object and a value and returns the first key that corresponds to that value;
+* `flatten(...)`: takes in an array that contains elements including nested array of elements and returns a flattened version of the array;
+* `head(...)`: takes in an array and returns the first element in the array;
+* `index.js`: contains all the helper functions;
+* `letterPositions`: takes in a string and returns all indices of letter positions in the string;
+* `map`: takes in an array and a callback and returns a new array based on the results of the callback on each item in the array;
+* `middle`: takes in an array and returns middle most element of the array;
+* `tail`: takes in an array and returns everything except the first element of the array;
+* `takeUntil`: takes in an array and callback and returns a slice of the array based on the criteria specified in the callback;
+* `without`: takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array;
 
-Description of the rest of functions is in the working progress...
+
+
+
+

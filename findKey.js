@@ -1,10 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`%c Assertion Passed: ${actual} === ${expected}`, 'background: #a8f7c5');
-  } else {
-    console.log(`%c Assertion Failed: ${actual} !== ${expected}`, 'background: #f5a6b4');
-  }
-};
+const assertEqual = require('./assertEqual');
+
 //Find Key
 const findKey = (obj, cb) => {
   // console.log(obj["Blue Hill"].stars);
@@ -37,5 +32,5 @@ let a =  findKey({
   "Akelarre":  { stars: 3 }
 }, (x) => x.stars === 2) // => "noma"
 
-console.log(a);
+assertEqual(a, "noma");
 
