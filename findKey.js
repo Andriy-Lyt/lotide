@@ -5,17 +5,8 @@ const findKey = (obj, cb) => {
   // console.log(obj["Blue Hill"].stars);
   
    for (const key in obj) {
-    // console.log('cb(key): '+cb(obj[key]) );
-    // console.log('obj[key]["stars"]: '+obj[key]["stars"] );
-    // console.log('obj[key].stars: '+obj[key].stars ); works
-    // console.log(obj[key]["stars"] === 2);   works
-    // console.log(obj[key]["stars"] === cb(obj[key]));
-    // console.log('cb(obj[key]):'+ cb(obj[key])); //works, returns BOOLEAN
-    // console.log('obj[key]["stars"]: ' +obj[key]["stars"]); //works, returns NUMBER
-    
+     
     if (cb(obj[key])) {
-        // console.log('obj[key]["stars"]=='+ obj[key]["stars"]);
-        // console.log('key: '+key);
       return key;
     }
   }// closing for loop

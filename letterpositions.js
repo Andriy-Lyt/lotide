@@ -12,9 +12,6 @@ const letterPositions = (sentence) => {
         results[letter] = [i];
         // console.log(results);
       }
-      // console.log('results: '+results[letter][i]);
-      // console.log('letter: '+letter);
-      // console.log('i: '+i);
       else{
         results[letter].push(i);
       }

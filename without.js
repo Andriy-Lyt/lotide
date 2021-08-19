@@ -2,7 +2,7 @@ const eqArrays = require('./eqArrays');
 const assertArraysEqual = require('./assertArraysEqual');
 
  const without = (source, itemsToRemove) => {
-  resultAr =[];
+  const resultAr =[];
   let sourceItem;
   
   for (let i = 0; i < source.length; i++) {
