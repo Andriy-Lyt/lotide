@@ -1,16 +1,5 @@
 /*
 //The console.assert() method writes an error message to the console if the assertion is false. If the assertion is true, nothing happens.
-
-// console.assert(1===1.1 );
-
-// FUNCTION IMPLEMENTATION
-const sum = function(a, b) { 
-  return a + b;
-}
-
-// TEST CODE
-console.assert(sum(1, 2) === 3);
-console.assert(sum(1, 20) === 3, 'function does not work'); // bad / incorrect assertion, and we see it fail!
 */
 
 // FUNCTION IMPLEMENTATION
@@ -21,6 +10,10 @@ const assertEqual = function(actual, expected) {
       console.log(`%c Assertion Failed: ${actual} !== ${expected}`, 'background: #f5a6b4');
     }
 };
+
+// TEST CODE
+// console.assert(sum(1, 2) === 3);
+// console.assert(sum(1, 20) === 3, 'function does not work'); // bad / incorrect assertion, and we see it fail!
 
 
 module.exports = assertEqual;

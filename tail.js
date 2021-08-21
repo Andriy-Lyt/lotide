@@ -1,4 +1,3 @@
-
 function tail(array) {
   return array.length >= 2 ? array.slice(1) : [] ;
 }

@@ -1,11 +1,8 @@
 const assertEqual = require('./assertEqual');
 
-//Find Key
-const findKey = (obj, cb) => {
-  // console.log(obj["Blue Hill"].stars);
+const findKey = (obj, cb) => {    // console.log(obj["Blue Hill"].stars);
   
    for (const key in obj) {
-     
     if (cb(obj[key])) {
       return key;
     }
@@ -25,3 +22,4 @@ let a =  findKey({
 
 assertEqual(a, "noma");
 
+module.exports = findKey;

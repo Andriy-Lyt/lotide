@@ -6,13 +6,13 @@ const eqObjects = function(object1, object2) {
 //check for equal length
 if (Object.keys(object1).length !== Object.keys(object2).length) { return false; }
 
-//check for same values
+//check for same values block -----------
 const obj1Keys = Object.keys(object1);
 
 //check for equal values (arrays, objects or primitives) regardles of the keys' order in both objects
 for (const key of obj1Keys) {
   
-  //if values are objects - recursion
+  //if values are objects (both arrays and objects)
   if(typeof object1[key] === 'object') {
     // console.log(object1[key], object2[key]);
 
@@ -22,7 +22,7 @@ for (const key of obj1Keys) {
           return false;
         }
       }
-      //if values are objects
+      //if values are objects - recursion
       else if(!eqObjects(object1[key], object2[key])){
           return false;
         }
@@ -63,7 +63,7 @@ const dc = { d: ["2", 3], c: "1" };
 const cd2 = { c: "1", d: ["2", 3, 4] };
 // console.log(eqObjects(cd, cd2), "should be false"); // => false
 
-//Nested Objects test
+//Nested Objects test ------------
 console.log(eqObjects( { a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 } ), " - should be true, line 67") // => true
 
 console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), "- should be false, line 69");// => false
