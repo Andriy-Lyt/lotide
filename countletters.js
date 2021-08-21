@@ -5,7 +5,7 @@ const assertEqual = function(actual, expected) {
     console.log(`%c Assertion Failed: ${actual} !== ${expected}`, 'background: #f5a6b4');
   }
 };
-//Function
+//Function implementation
 const countLetters = (string) => {
   const result = {};
 

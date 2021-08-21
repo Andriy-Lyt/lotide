@@ -21,4 +21,4 @@ module.exports = {
   findKey, findkeybyvalue, flatten, head, letterpositions, map, middle, tail, takeUntil, without
 };
 
-console.log(module.exports);
+// console.log(module.exports);

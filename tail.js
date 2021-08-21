@@ -2,6 +2,8 @@ function tail(array) {
   return array.length >= 2 ? array.slice(1) : [] ;
 }
 
+
+//Tests -------
 // console.log(tail(["Hello", "Lighthouse", "Labs"])); 
 
 // let string = "abc";

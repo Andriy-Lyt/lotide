@@ -1,6 +1,6 @@
 const assertEqual = require('./assertEqual');
 
-//Function countOnly
+//Function countOnly implement.
 const countOnly = (allItems, itemsToCount) => {
   const results = {};
 
